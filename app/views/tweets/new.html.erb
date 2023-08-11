@@ -3,11 +3,8 @@
     <h3>投稿する</h3>
      <%= form_with(model: @tweet, local: true) do |form|%>
        <%= form.text_field :image, placeholder: "Image URL"%>
-       <%= form.text_area :text, placeholder:"text", rowa: "10" %>
+       <%= form.text_area :text, placeholder:"text", row: "10" %>
        <%= form.submit "SEND"%>
-
-
-  
-  <% end %>
+     <% end %>
   </div>
 </div>

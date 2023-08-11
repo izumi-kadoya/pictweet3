@@ -6,6 +6,12 @@
         <span><%= image_tag '41549.png'%></span>
         <ul class="more_list">
           <li>
+            <%= link_to '詳細', tweet_path(tweet.id)  %>
+          </li>
+          <li>
+            <%= link_to '編集', edit_tweet_path(tweet.id)  %>
+          </li>
+          <li>
             <%= link_to '削除', "/tweets/#{tweet.id}", data: { turbo_method: :delete } %>
           </li>
         </ul>
